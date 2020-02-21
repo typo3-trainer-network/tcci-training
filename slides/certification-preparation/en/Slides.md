@@ -1,12 +1,12 @@
 name: begin
 class: center, middle, h1-fullwidth
-background-image: url(../images/TYPO3Logo.svg)
+background-image: url(../../images/TYPO3Logo.svg)
 
 # TYPO3 Integrator Training
 
 ---
 class: fullscreen-image-pos-absolute
-background-image: url(../images/Benediktbeuern_1080p.png)
+background-image: url(../../images/Benediktbeuern_1080p.png)
 
 .pa.r-10p.t-45p[
 # Hallo schöne TYPO3 Welt!
@@ -21,7 +21,7 @@ Foto Copyright Oliver Thiele
 ]
 ---
 class: center, middle, fullscreen-image
-background-image: url(../images/Benediktbeuern_1080p.png)
+background-image: url(../../images/Benediktbeuern_1080p.png)
 
 # Hallo schöne TYPO3 Welt!
 
@@ -29,7 +29,7 @@ background-image: url(../images/Benediktbeuern_1080p.png)
 
 ---
 class: left, fullscreen-image pt-50
-background-image: url(../images/Benediktbeuern_1080p.png)
+background-image: url(../../images/Benediktbeuern_1080p.png)
 
 # Hallo schöne TYPO3 Welt!
 
@@ -37,7 +37,7 @@ background-image: url(../images/Benediktbeuern_1080p.png)
 
 ---
 class: right, fullscreen-image
-background-image: url(../images/Benediktbeuern_1080p.png)
+background-image: url(../../images/Benediktbeuern_1080p.png)
 
 # Hallo schöne TYPO3 Welt!
 
@@ -326,7 +326,7 @@ It describes common interfaces for HTTP server request handlers and HTTP server 
 
 --
 
-.center[![TYPO3 BE Configuration](../images/TYPO3-BE-Configuration-PSR-15.png "TYPO3 BE Configuration Module")]
+.center[![TYPO3 BE Configuration](../../images/TYPO3-BE-Configuration-PSR-15.png "TYPO3 BE Configuration Module")]
 
 ---
 name: PSR-17
