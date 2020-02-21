@@ -1,0 +1,329 @@
+@import "Share";
+@import "SourceSansPro";
+@import "CascadiaMono";
+
+$gray: rgb(51, 51, 51);
+$typo3: #ff8700;
+$pagePadding: 5.5rem;
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Share', sans-serif;
+  font-weight: normal;
+}
+
+.remark-slide-content p {
+  font-size: 2rem;
+  color: $gray;
+}
+
+.remark-slide-content h2 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: 'CascadiaMono', monospace;
+}
+
+.remark-slide img {
+  max-width: 100%;
+  padding: 2px;
+  margin-top: 1rem;
+}
+
+.remark-code,
+.remark-slide img {
+  border: 1px solid $gray;
+  -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.remark-slide h1 {
+  background-color: $typo3;
+  color: #fff;
+  padding: 0.5rem 2rem;
+}
+
+h2 {
+  margin-top: .4em !important;
+  margin-bottom: 0.5em;
+}
+
+.h1-fullwidth h1 {
+  margin: 0 !important;
+  padding-left: $pagePadding;
+  padding-right: $pagePadding;
+  padding-top: 0.25em !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-content {
+  padding: $pagePadding;
+}
+
+.remark-slide li,
+.remark-slide li p,
+.remark-slide li a {
+  color: $gray;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-top: 0 !important;
+  margin-bottom: 0.5em !important;
+}
+
+h1, h2, h3, li {
+  letter-spacing: 0.02em;
+  color: $gray;
+}
+
+.h1-fullwidth.middle h1 {
+  top: 44%;
+}
+
+.h1-fullwidth.middle {
+  padding: 0 !important;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 0;
+
+  p {
+    bottom: 0;
+    font-size: 1.2rem;
+  }
+}
+
+.red {
+  color: red;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.fullscreen-image.center h1,
+.fullscreen-image.center h2 {
+  padding: 0 2rem;
+  margin-top: 0;
+}
+
+.fullscreen-image h1 {
+  font-size: 5rem;
+  background: none;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+.fullscreen-image h2 {
+  font-size: 3rem;
+  background: none;
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+// Left / Right fullscreen image
+.fullscreen-image.left,
+.fullscreen-image.right {
+  h1, h2 {
+    padding: 0 1rem;
+    margin-top: 0;
+  }
+}
+
+.fullscreen-image.left,
+.fullscreen-image.right {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+.fullscreen-image.right h1 {
+  padding-left: 33%;
+}
+
+.fullscreen-image.left h1 {
+  padding-right: 33%;
+}
+
+// Fullscreen with absolute position
+.fullscreen-image-pos-absolute,
+.fullscreen-image-pos-absolute h1,
+.fullscreen-image-pos-absolute h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.fullscreen-image-pos-absolute {
+  position: relative;
+}
+
+.fullscreen-image-pos-absolute .footnote {
+  padding-left: 5.5rem;
+}
+
+.fullscreen-image-pos-absolute .footnote p {
+  color: #ccc;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+
+.fullscreen-image-pos-absolute h1,
+.fullscreen-image-pos-absolute h2 {
+  margin: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: none;
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+.pa {
+  position: absolute;
+}
+
+.pa.left {
+  left: $pagePadding;
+}
+
+.pa.right {
+  right: $pagePadding;
+}
+
+// Position left
+.l-5p {
+  left: 5%;
+}
+
+.l-10p {
+  left: 10%;
+}
+
+.l-15p {
+  left: 15%;
+}
+
+.l-20p {
+  left: 20%;
+}
+
+.l-25p {
+  left: 25%;
+}
+
+.l-30p {
+  left: 30%;
+}
+
+// Position right
+.r-5p {
+  right: 5%;
+}
+
+.r-10p {
+  right: 10%;
+}
+
+.r-15p {
+  right: 15%;
+}
+
+.r-20p {
+  right: 20%;
+}
+
+.r-25p {
+  right: 25%;
+}
+
+.r-30p {
+  right: 30%;
+}
+
+// Position top
+.t-5p {
+  top: 5%;
+}
+
+.t-10p {
+  top: 10%;
+}
+
+.t-15p {
+  top: 15%;
+}
+
+.t-20p {
+  top: 20%;
+}
+
+.t-25p {
+  top: 25%;
+}
+
+.t-30p {
+  top: 30%;
+}
+
+.t-35p {
+  top: 35%;
+}
+
+.t-40p {
+  top: 40%;
+}
+
+.t-45p {
+  top: 45%;
+}
+
+.t-50p {
+  top: 50%;
+}
+
+.t-55p {
+  top: 55%;
+}
+
+.t-60p {
+  top: 60%;
+}
+
+.t-65p {
+  top: 65%;
+}
+
+.t-70p {
+  top: 70%;
+}
+
+.t-75p {
+  top: 75%;
+}
+
+.t-80p {
+  top: 80%;
+}
+
+.t-85p {
+  top: 85%;
+}
+
+.t-90p {
+  top: 90%;
+}
+
+.t-95p {
+  top: 95%;
+}
