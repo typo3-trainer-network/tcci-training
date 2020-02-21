@@ -5,28 +5,135 @@ background-image: url(../../images/TYPO3Logo.svg)
 # TYPO3 Integrator Training
 
 ---
-class: fullscreen-image-pos-absolute
-background-image: url(../../images/Benediktbeuern_1080p.png)
+name: prerequirements
+class: center, middle, h1-fullwidth
+layout: false
 
-.pa.r-10p.t-45p[
-# Hallo schöne TYPO3 Welt!
-]
-
-.pa.r-10p.t-55p[
-## Absolute Positionierung
-]
-
-.footnote[
-Foto Copyright Oliver Thiele
-]
+# Prerequirements
 ---
-class: center, middle, fullscreen-image
-background-image: url(../../images/Benediktbeuern_1080p.png)
+name: webskills
+class: h1-fullwidth
+# Web skills
 
-# Hallo schöne TYPO3 Welt!
+* HTML
+* CSS
+* Javascript
+* SEO
+---
+name: technicalskills
+class: h1-fullwidth
+# Technical skills
 
-## Hier steht der Subheader ...
+* Charsets
+* Command line
+* File permissions
+* Image manipulation
+* Webserver
+* Regular expressions
+* YAML
+* Cron jobs
+* HTTP status codes
+---
+name: gettinghelp
+class: center, middle, h1-fullwidth
+layout: false
 
+# Getting Help
+---
+name: documentation
+class: h1-fullwidth
+# Getting help
+
+* docs.typo3.org
+* Slack
+* Mailing lists
+* Stackoverflow [typo3]
+---
+name: installation
+class: center, middle, h1-fullwidth
+layout: false
+
+# Installation
+---
+name: installrequirements
+class: h1-fullwidth
+# Software components
+
+* Webserver
+* PHP (Versions, Modules, Settings)
+* DBMS
+* Image manipulation libraries
+* Commandline commands
+* Operating systems
+* Webbrowsers
+---
+name: installways
+class: h1-fullwidth
+# Installation ways
+
+* get.typo3.org
+    * composer
+    * from Git
+---
+name: installtypo3
+class: h1-fullwidth
+# TYPO3 Tools
+
+* Step wizard
+* Upgrade wizard
+* Install tool
+* TYPO3 console
+---
+name: performance
+class: center, middle, h1-fullwidth
+layout: false
+
+# Performance
+---
+name: performancex
+class: h1-fullwidth
+# performance
+
+* Caching (Redis, Varnish)
+* TYPO3 Caching
+* HTTP headers
+* compression / concatenating
+---
+name: backend-administration
+class: center, middle, h1-fullwidth
+layout: false
+
+# Backend Administration
+---
+name: core
+class: center, middle, h1-fullwidth
+layout: false
+
+# Core Architecture & APIs
+---
+name: typoscript
+class: center, middle, h1-fullwidth
+layout: false
+
+# TypoScript
+---
+name: templating
+class: center, middle, h1-fullwidth
+layout: false
+
+# Templating & other outputs
+---
+name: extensions
+class: center, middle, h1-fullwidth
+layout: false
+
+# Extensions
+---
+name: security
+class: center, middle, h1-fullwidth
+layout: false
+
+# Security
 ---
 class: left, fullscreen-image pt-50
 background-image: url(../../images/Benediktbeuern_1080p.png)
