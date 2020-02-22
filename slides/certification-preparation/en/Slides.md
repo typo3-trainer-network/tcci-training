@@ -311,7 +311,7 @@ layout: false
 ---
 name: documentation
 class: h1-fullwidth
-# Getting help
+# Getting Help
 
 * docs.typo3.org
 
@@ -685,6 +685,71 @@ layout: false
 
 # Getting Help
 ---
+name: work-help-docs
+class: h1-fullwidth
+# docs.typo3.org
+
+* Tutorials
+* Guides
+* References
+* Search
+* ChangeLog
+* Documentation of system and 3rd Party extensions
+
+???
+
+Search just works in current manual and version
+
+---
+name: work-help-slack
+class: h1-fullwidth
+# Slack
+
+* How to register
+* Different channels
+
+???
+
+Register at https://my.typo3.org/about-mytypo3org/slack
+
+Channels:
+
+* \#typo3-cms
+* \#beginners
+* \#ext-* for extensions
+* \#cig-* for common interest group
+
+---
+name: work-help-mailing-lists
+class: h1-fullwidth
+# Mailing Lists
+
+* Access
+* Register
+
+???
+
+At http://lists.typo3.org/
+
+---
+name: work-help-stackoverflow
+class: h1-fullwidth
+# Stackoverflow
+
+* Search
+* Register
+* Ask Questions
+
+???
+
+Search: https://stackoverflow.com/questions/tagged/typo3
+
+Questions should be tagged with typo3, in order to get send to slack.
+
+https://stackoverflow.com/help/how-to-ask
+
+---
+
 name: work-install
 class: center, middle, h1-fullwidth
 layout: false
