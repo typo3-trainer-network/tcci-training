@@ -5,6 +5,22 @@ background-image: url(../../images/TYPO3Logo.svg)
 # TYPO3 Integrator Training
 
 ---
+name: agenda
+class: h1-fullwidth
+# Agenda
+
+* [Introduction](#introduction)
+* [Prerequirements](#prerequirements)
+* [Getting Help](#gettinghelp)
+* [Installation](#installation)
+* [Performance](#performance)
+* [Backend Administration](#backend-administration)
+* [Core Architecture & APIs](#core)
+* [TypoScript](#typoscript)
+* [Templating & other outputs](#templating)
+* [Extensions](#extensions)
+* [Security](#security)
+---
 name: prerequirements
 class: center, middle, h1-fullwidth
 layout: false
@@ -16,18 +32,32 @@ class: h1-fullwidth
 # Web skills
 
 * HTML
+???
+* you know HTML5 tags and understand semantic HTML
+* you know what HTML-attributes are
 
 --
 
 * CSS
-
+???
+* you know how to include CSS in different ways
 --
 
 * Javascript
+???
+* you know how to include JS in different ways
+* you know that there exist different javascript libraries
 
 --
 
 * SEO
+???
+* you know about meta tags
+* you know what a XML sitemap is
+* you know about speaking urls and redirects
+* you know about important texts (page title, title attribute, ...)
+* you know index-enable, follow, robots.txt, canonical, hreflang
+
 ---
 name: technicalskills
 class: h1-fullwidth
