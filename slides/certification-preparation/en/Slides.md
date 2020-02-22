@@ -676,7 +676,62 @@ See: https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/Guid
 ???
 
 * Have a way to automatically create backup of database and filesystem.
-* Also have a way to restore data for fielsystem and database.
+* Also have a way to restore data for filesystem and database.
+
+---
+name: work-help
+class: center, middle, h1-fullwidth
+layout: false
+
+# Getting Help
+---
+name: work-install
+class: center, middle, h1-fullwidth
+layout: false
+
+# Installation
+---
+name: work-perform
+class: center, middle, h1-fullwidth
+layout: false
+
+# Performance
+---
+name: work-backend
+class: center, middle, h1-fullwidth
+layout: false
+
+# Backend Administration
+---
+name: work-core
+class: center, middle, h1-fullwidth
+layout: false
+
+# Core Architecture & APIs
+---
+name: work-typoscript
+class: center, middle, h1-fullwidth
+layout: false
+
+# TypoScript
+---
+name: work-templating
+class: center, middle, h1-fullwidth
+layout: false
+
+# Templating & other outputs
+---
+name: work-extensions
+class: center, middle, h1-fullwidth
+layout: false
+
+# Extensions
+---
+name: work-security
+class: center, middle, h1-fullwidth
+layout: false
+
+# Security
 
 ---
 class: left, fullscreen-image pt-50
