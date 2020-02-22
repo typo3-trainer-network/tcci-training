@@ -1171,7 +1171,7 @@ class: h1-fullwidth
 
 * FontAwesome (*.fa)
 
-* OpenSourceFont (*osf)
+* OpenSourceFont (*.osf)
 
 ???
 
