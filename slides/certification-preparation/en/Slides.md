@@ -27,11 +27,205 @@ layout: false
 
 # Introduction
 ---
-name: introductionx
+name: about
 class: h1-fullwidth
-# Introduction
+# About the TYPO3 Certification
 
-* 
+* The goal is to ensure the quality of TYPO3 CMS applications and websites remains at a high level
+
+--
+
+* TYPO3 is one of the first Open Source CMS with a Certification (since 2008)
+---
+name: reason
+class: h1-fullwidth
+# What is the reason for the Certification?
+
+* TYPO3 CMS has become a major player in the market
+
+--
+
+* The expectation of the customers have increased
+
+--
+
+* With the success of TYPO3, the underlying complexity has grown
+
+--
+
+* Therefore, a successful project also requires extensive knowledge in the technologies of the CMS
+---
+name: important
+class: h1-fullwidth
+# The Certification is important for
+
+* TYPO3 CMS Customers
+
+???
+* to assure the selected service supplier has the knowledge to implement a properly configured and successful TYPO3 solution.
+
+--
+
+* the TYPO3 CMS Project
+
+???
+* to show the market that there are lots of skilled specialists offering professional TYPO3 CMS services.
+
+--
+
+* TYPO3 CMS Professionals
+
+???
+* to train and test their skills and to present themselves as certified professionals to the market.
+
+--
+
+* YOU
+
+???
+* because you are an important part of our TYPO3 Community!
+---
+name: advantages
+class: h1-fullwidth
+# Advantages of the Certification
+
+* Proof of knowledge and experience of a TYPO3 Integrators
+
+--
+
+* Own achievement of objectives (self esteem)
+
+--
+
+* Advantage at salary negotiations
+
+--
+
+* Criteria at „call for bids“
+
+???
+* german: öffentliche Ausschreibung
+
+--
+
+* Criteria for PSL (Professional Services Listing)
+---
+name: integrator
+class: h1-fullwidth
+# But what exactly is an „Integrator“?
+
+The Education Team defines the "TYPO3 CMS Certified Integrator" as follows:
+
+--
+
+* The "TYPO3 CMS Certified Integrator" develops the template for a website, configures all the necessary extensions and creates the access rights for backend users.
+
+--
+
+* The "TYPO3 CMS Certified Integrator" does install TYPO3 on the webserver but does not program extensions.
+
+--
+
+* The "TYPO3 CMS Certified Integrator" knows how to configure the pre-installed TYPO3 using the installer.
+---
+name: costs
+class: h1-fullwidth
+# Testing costs
+
+* The cost of the test are 200 EUR
+
+--
+
+* If you are Association member, you will get 50 EUR discount
+---
+name: procedure
+class: h1-fullwidth
+# Procedure of certification
+
+* Register to a certification event of your choice
+
+???
+* an online certification is in progress and should be available in summer 2020.
+
+--
+
+* Go to the event and run the exam
+
+--
+
+* After the exam, you'll get a notification via email if you have passend or not
+
+--
+
+* After about 4 weeks you will get a paper based certificate, if passed
+
+---
+name: checklist
+class: h1-fullwidth
+# Exam checklist
+
+* Be prepared
+    * Have you read the Syllabus?
+    * Did you have a look at the example questions?
+    * Did you have a very close look at the TSRef and TSConfig?
+
+--
+
+* Participant identification
+    * Be prepared to show a photographic ID
+
+???
+Including a full name and signature. You will not be permitted to undertake the test if you fail to show acceptable forms of the ID. This will result in a forfeit of your test fee.
+
+--
+
+* Be there in time
+    * Don't be late!
+
+???
+We ask that you arrive at the exam location 15 minutes before your scheduled appointment time. This will give you adequate time to complete the necessary sign-in procedures. If you arrive more than 15 minutes late for your appointment, you may be refused admission and exam fees may be forfeited.
+---
+name: checklist2
+class: h1-fullwidth
+# Exam checklist
+* Language
+    * Please be aware: The exam will be in English only.
+
+???
+If you typically work with a backend in a different language please have a closer look at the English one as well to make sure you understand the technical terms in the exam questions.
+
+--
+
+* Resources & cheat sheets
+    * You do not have to bring anything (aside from a valid ID - see above) for the test!
+    * You will not be allowed to use anything but your brain to pass the test.
+
+???
+So do not bring your laptop, your colleagues or any cheat sheet with you.
+
+---
+name: checklist2
+class: h1-fullwidth
+# Exam checklist
+
+* NDA
+    * Before you can start the exam you will have to agree to the NDA
+    * Take your time to read it carefully.
+    * This agreement is created to protect your certification.
+
+???
+You do not have to bring the signed NDA to the certification - we will provide the NDA and you can sign it before taking the exam.
+By adhering to this agreement (that is, keeping questions, answers and other information related to the certification exam confidential and by ensuring that the certification banners are used only by you), you help maintain the integrity of TYPO3 certification program.
+
+--
+
+* Sign off / Cancellation
+    * It is not possible to cancel a registration
+    * It is allowed to send an other person
+
+???
+You can send an other person to the exam, if you are prevented. In this case, you have to inform the education team and wait for a confirmation.
+Not showing up at the date you registered or signing off within this period will be treated as if you did not pass. You also will be charged the full amount of the certification fee.
 ---
 name: prerequirements
 class: center, middle, h1-fullwidth
