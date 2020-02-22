@@ -16,8 +16,17 @@ class: h1-fullwidth
 # Web skills
 
 * HTML
+
+--
+
 * CSS
+
+--
+
 * Javascript
+
+--
+
 * SEO
 ---
 name: technicalskills
@@ -25,13 +34,37 @@ class: h1-fullwidth
 # Technical skills
 
 * Charsets
+
+--
+
 * Command line
+
+--
+
 * File permissions
+
+--
+
 * Image manipulation
+
+--
+
 * Webserver
+
+--
+
 * Regular expressions
+
+--
+
 * YAML
+
+--
+
 * Cron jobs
+
+--
+
 * HTTP status codes
 ---
 name: gettinghelp
@@ -45,8 +78,17 @@ class: h1-fullwidth
 # Getting help
 
 * docs.typo3.org
+
+--
+
 * Slack
+
+--
+
 * Mailing lists
+
+--
+
 * Stackoverflow [typo3]
 ---
 name: installation
@@ -60,11 +102,29 @@ class: h1-fullwidth
 # Software components
 
 * Webserver
+
+--
+
 * PHP (Versions, Modules, Settings)
+
+--
+
 * DBMS
+
+--
+
 * Image manipulation libraries
+
+--
+
 * Commandline commands
+
+--
+
 * Operating systems
+
+--
+
 * Webbrowsers
 ---
 name: installways
@@ -80,8 +140,17 @@ class: h1-fullwidth
 # TYPO3 Tools
 
 * Step wizard
+
+--
+
 * Upgrade wizard
+
+--
+
 * Install tool
+
+--
+
 * TYPO3 console
 ---
 name: performance
@@ -92,11 +161,20 @@ layout: false
 ---
 name: performancex
 class: h1-fullwidth
-# performance
+# Performance
 
 * Caching (Redis, Varnish)
+
+--
+
 * TYPO3 Caching
+
+--
+
 * HTTP headers
+
+--
+
 * compression / concatenating
 ---
 name: backend-administration
@@ -105,11 +183,59 @@ layout: false
 
 # Backend Administration
 ---
+name: backend-administrationx
+class: h1-fullwidth
+# Backend Administration
+
+* Site Configuration
+
+--
+
+* Workspaces
+
+--
+
+* Forms
+
+--
+
+* Import/Export
+
+--
+
+* User Rights/Access
+
+--
+
+* Rich text editor
+
+--
+
+* Reports Module
+
+--
+
+* Scheduler
+---
 name: core
 class: center, middle, h1-fullwidth
 layout: false
 
 # Core Architecture & APIs
+---
+name: corex
+class: h1-fullwidth
+# Core Architecture & APIs
+
+* FAL
+
+--
+
+* XLIFF
+
+--
+
+* Page title provider
 ---
 name: typoscript
 class: center, middle, h1-fullwidth
@@ -117,11 +243,75 @@ layout: false
 
 # TypoScript
 ---
+name: typoscriptx
+class: h1-fullwidth
+# TypoScript
+
+* TypoScript functions (getText, stdWrap, ...)
+
+--
+
+* Image Generation / Manipulation with TypoScript
+
+--
+
+* TypoScript Constants
+
+--
+
+* TypoScript Object Browser / Template Analyzer
+
+--
+
+* TypoScript Syntax & Basics & TLOs
+
+--
+
+* Page & User TSconfig
+
+--
+
+* TypoScript Objects and properties
+---
 name: templating
 class: center, middle, h1-fullwidth
 layout: false
 
 # Templating & other outputs
+---
+name: templatingx
+class: h1-fullwidth
+# Templating & other outputs
+
+* What is a Templating Engine?
+
+--
+
+* What is Fluid?
+
+--
+
+* ViewHelpers
+
+--
+
+* Importing ViewHelpers
+
+--
+
+* Templates, Layouts, Partials
+
+--
+
+* Using the Fluid View
+
+--
+
+* Fluid ViewHelpers
+
+--
+
+* Dataprocessors
 ---
 name: extensions
 class: center, middle, h1-fullwidth
@@ -129,11 +319,63 @@ layout: false
 
 # Extensions
 ---
+name: extensionsx
+class: h1-fullwidth
+# Extensions
+
+* Extension Manager Basics
+
+--
+
+* Composer
+
+--
+
+* TER
+
+--
+
+* Plugins and Modules
+
+--
+
+* What is MVC?
+---
 name: security
 class: center, middle, h1-fullwidth
 layout: false
 
 # Security
+---
+name: securityx
+class: h1-fullwidth
+# Security
+
+* About the TYPO3 Security Team
+
+--
+
+* Get informed about Security issues
+
+--
+
+* Secure passwords
+
+--
+
+* Security inside TypoScript and Fluid
+
+--
+
+* Security headers & https
+
+--
+
+* Security related Installtool options
+
+--
+
+* Backup strategy
 ---
 class: left, fullscreen-image pt-50
 background-image: url(../../images/Benediktbeuern_1080p.png)
