@@ -1,0 +1,24 @@
+page = PAGE
+page.10 = IMAGE
+page.10 {
+    file = GIFBUILDER
+    file {
+        XY = [10.w]+10,[10.h]+30
+        backColor = #333333
+        10 = IMAGE
+        10 {
+            file = fileadmin/certifuncation.jpg
+            width = [20.w]+20
+            offset = 5,5
+        }
+        20 = TEXT
+        20 {
+            text = Copyright 2019-{date:Y} example.com
+            text.insertData = 1
+            fontSize = 14
+            fontFile = fileadmin/SourceSansPro-Regular.otf
+            fontColor = #ffffff
+            offset = 10,[10.h]+30-8
+        }
+    }
+}
