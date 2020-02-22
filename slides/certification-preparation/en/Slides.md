@@ -143,55 +143,117 @@ name: installrequirements
 class: h1-fullwidth
 # Software components
 
-* Webserver
+* Web server
+???
+* know is possible on most current versions such apache, nginx or iis
+* understand about mod-rewrite, htaccess 
+* know about SSL support
 
 --
 
 * PHP (Versions, Modules, Settings)
+???
+* version 10 from PHP >= 7.2 <= 7.4
+* you know where to find information about incompatibilities and new features http://php.net/manual/en/migration70.php
+* you know about basic modules you need like zip, pdo, mysqli, openssl, etc
 
 --
 
 * DBMS
+???
+* know about Doctrine
+* version 10 from MySQL >= 5 <= 5.7, Postgres, SQL, SQLite or MariaDB >= 10 <= 10.3
+* know about data base privileges
 
 --
 
-* Image manipulation libraries
+* Image processing
+???
+* know where temporary data is stored (typo3temp)
+* know where you can configure and test the processor (Install tool: Environment)
 
 --
 
 * Commandline commands
+???
+* know how to use composer for installing distribution, extensions and updates
+* know how to use cli commands for updating languages, run cron jobs, block installations
 
 --
 
 * Operating systems
+???
+* know that it should run on any OS if it has a web server for PHP and database server
 
 --
 
-* Webbrowsers
+* Web browsers
+???
+* know that the backend is not supported for most versions of Internet Explorer, only Edge
+
 ---
 name: installways
 class: h1-fullwidth
-# Installation ways
+# Installation guide
 
 * get.typo3.org
     * composer
-    * from Git
+    * git
+    * direct downloads
+    
+???
+* know how to download the distribution package using composer, this is the recommended way 
+See: https://docs.typo3.org/m/typo3/guide-installation/master/en-us/QuickInstall/Composer/Index.html
+* or creating a composer.json file including the necessary system extensions using the composer helper
+See: https://get.typo3.org/misc/composer/helper
+* know how to download the source from Git git clone
+See: https://github.com/TYPO3/TYPO3.CMS
+* know also how to download the source package distribution using wget, curl or direct download
+
+--
+
+* Distributions
+???
+* know that a distribution is a preconfigured installation
+* know that it is possible to select a predefined distribution on a first time installation
+--
+
+* Root level folders and file structure
+???
+* public:is the document root and public entry point
+* var: contains system files, like caches, logs, sessions…
+* vendor: contains third-party php packages, libraries etc.
 ---
 name: installtypo3
 class: h1-fullwidth
 # TYPO3 Tools
 
-* Step wizard
+* Install tool
+???
+* know that it is located in typo3/install and can be accessed as http://www.example.com/typo3/install.php
 
+--
+ 
+* Step wizard
+???
+* create the FIRST_INSTALL file in the document root
+* know how to fix system environment issues
+See: https://docs.typo3.org/m/typo3/guide-installation/master/en-us/Troubleshooting/Index.html#troubleshooting
+* know how to set up the base configuration for the site
+
+--
+
+* Password handling
+???
+* know that there are not default passwords for protected areas
+* know that first created administrator has the same password as the install tool which must be changed
+* know that there is at the moment no option for recovering passwords
 --
 
 * Upgrade wizard
 
 --
 
-* Install tool
-
---
 
 * TYPO3 console
 ---
