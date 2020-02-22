@@ -89,7 +89,7 @@ name: advantages
 class: h1-fullwidth
 # Advantages of the Certification
 
-* Proof of knowledge and experience of a TYPO3 Integrators
+* Proof of knowledge and experience of a TYPO3 Integrator
 
 --
 
@@ -132,7 +132,7 @@ name: costs
 class: h1-fullwidth
 # Testing costs
 
-* The cost of the test are 200 EUR
+* The cost of the test are about 200 EUR
 
 --
 
@@ -204,14 +204,14 @@ If you typically work with a backend in a different language please have a close
 So do not bring your laptop, your colleagues or any cheat sheet with you.
 
 ---
-name: checklist2
+name: checklist3
 class: h1-fullwidth
 # Exam checklist
 
 * NDA
-    * Before you can start the exam you will have to agree to the NDA
+    * Before you can start the exam you will have to agree to the NDA.
     * Take your time to read it carefully.
-    * This agreement is created to protect your certification.
+    * This agreement is created to protect the certification.
 
 ???
 You do not have to bring the signed NDA to the certification - we will provide the NDA and you can sign it before taking the exam.
@@ -226,6 +226,190 @@ By adhering to this agreement (that is, keeping questions, answers and other inf
 ???
 You can send an other person to the exam, if you are prevented. In this case, you have to inform the education team and wait for a confirmation.
 Not showing up at the date you registered or signing off within this period will be treated as if you did not pass. You also will be charged the full amount of the certification fee.
+---
+name: procedure
+class: h1-fullwidth
+# Procedure of the exam
+
+* 75 questions to answer in 90 minutes
+
+--
+
+* The certification language is english only
+
+--
+
+* There are „Multiple Choice“ questions only
+
+--
+
+* There is a hint, how many answers are correct
+
+--
+
+* One question is answered correctly, if all answers are correctly checked
+
+--
+
+* No tools
+
+--
+
+* No questions
+
+--
+
+* No leaving of the room
+
+--
+
+* Rooms is guarded by a person
+---
+name: nda
+class: h1-fullwidth
+layout: false
+
+# NDA - Non Disclosure Agreement
+
+* The usage of the „Certified Integrator“ Banner is only allowed after a sucessfully certification
+
+--
+
+* All informations of the certification (especially questions and answers) must must remain confidential. This protects the test
+
+--
+
+* The Association has the Copyright of the Certification
+
+--
+
+* Violations result in the loss of certification
+
+---
+name: validity
+class: h1-fullwidth
+layout: false
+
+# Validity of the exam
+
+* The certificate is valid for 24 months from the issue date.
+
+--
+
+* Old TYPO3 version 4.5 certificates have been deprecated since the end of the official support for version 4.5 in March 2015. They have been obsolete since the end of the extended long term support (ELTS) of version 4.5 in March 2017.
+---
+name: notpassed
+class: h1-fullwidth
+layout: false
+
+# Exam not passed
+
+* If you have the feeling, that the assessment is wrong, feel free to contact the education committee.
+
+--
+
+* Someone will have a look at the exam manually and will confirm the result.
+
+--
+
+* You can take the exam as many times as you like, but after every failed attempt there will be a 3 months waiting period until you can try again.
+
+--
+
+* Until then: Learn, Learn, Learn! :-)
+---
+name: passed
+class: h1-fullwidth
+layout: false
+
+# Exam passed
+
+* Before using any certification logo or calling yourself a «TYPO3 CMS Certified Integrator», you will be required to pass the certification examination offered by the TYPO3 Association, and you must receive notice from the TYPO3 Association stating that:
+    * you may use that particular certification banner and
+    * you are allowed to call yourself «TYPO3 CMS Certified Integrator».
+---
+name: logo
+class: h1-fullwidth
+layout: false
+
+# Certified Integrator logo
+
+* If you are a freelancer or a one-person-company, you may integrate the logo in a global scope being generally visible (e.g: your website's footer or sidebar).
+
+--
+
+* If you are working for a company that has more than one employee, the logo must only be used where it is directly associated with the certified employees.
+<br>For example: You may not use the logo on the homepage, or in the site footer, but you may use it on the employees bio or team-member page of the site should one exist.
+---
+name: difficulty
+class: h1-fullwidth
+layout: false
+
+# How difficulty and cutscores for the exam are determined?
+
+<br>
+* The questions are coming randomly from a question pool.
+
+--
+
+* So you get a mixture of simple and difficult questions.
+
+--
+
+* The cutting score is 51. So you need at least 51 correct answered questions out of 75.
+---
+name: faq
+class: h1-fullwidth
+layout: false
+
+# Scoring FAQ
+
+* Do you inform me about the score I have reached in the exam?
+<br>Yes
+
+???
+You get the score via email. It is not visible on the certificate.
+
+--
+
+* Am I granted access to the records?
+<br>No, we cannot allow you to examine the files.
+
+???
+  First of all examining the exam will not help you in any way since we will not give you any information regarding which questions have been answered correctly or incorrectly.
+  The administrative overhead would be far too large and we do not want to raise the price for the certification just because of a few curious people.
+  In case of doubt we cross check the exams so the source of errors should be as low as ever possible.
+
+---
+name: objectives
+class: h1-fullwidth
+layout: false
+
+# Objectives - Subject areas
+
+* If not stated otherwise questions as of now refer to TYPO3 CMS version 10 LTS
+
+--
+
+* There are 10 Objectives (subject areas)
+<br>These can change at anytime and/or an exam can contain less oder more questions from one objective
+
+--
+
+* It is important to know the differences between other TYPO3 versions, so get familiar with the „What’s new in TYPO3“ documents as well:
+<br>[http://typo3.org/download/release-notes/whats-new/](http://typo3.org/download/release-notes/whats-new/)
+---
+name: notneed
+class: h1-fullwidth
+layout: false
+
+# Objectives - What is NOT needed?
+
+* Take a look at the registration page which TYPO3 version is used for the exam!
+* Part of the exam are just system extensions (which are part of the release) but no other extension from the TER (TYPO3 Extension Repository)
+<br>So, no mask, news, powermail, …
+* Relevant are just these system extensions, which belong to the definition of an Integrator, so - no Extbase but Fluid!
+
 ---
 name: prerequirements
 class: center, middle, h1-fullwidth
@@ -261,7 +445,7 @@ class: h1-fullwidth
 * you know about meta tags
 * you know what a XML sitemap is
 * you know about speaking urls and redirects
-* you know about important texts (page title, title attribute, ...)
+* you know about important texts (page title, title attribute, …)
 * you know index-enable, follow, robots.txt, canonical, hreflang
 
 ---
@@ -483,7 +667,7 @@ name: typoscriptx
 class: h1-fullwidth
 # TypoScript
 
-* TypoScript functions (getText, stdWrap, ...)
+* TypoScript functions (getText, stdWrap, …)
 
 --
 
@@ -747,7 +931,7 @@ background-image: url(../../images/Benediktbeuern_1080p.png)
 
 # Hallo schöne TYPO3 Welt!
 
-## Hier steht der Subheader ...
+## Hier steht der Subheader …
 
 ---
 name: TOC
