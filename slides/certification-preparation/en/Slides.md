@@ -230,7 +230,14 @@ class: h1-fullwidth
 
 * Install tool
 ???
-* know that it is located in typo3/install and can be accessed as http://www.example.com/typo3/install.php
+* know that it is used to configure the system not just for installing it
+* know that it is located in typo3/install
+* on the frontend it can be accessed as http://www.example.com/typo3/install.php
+if the file ENABLE_INSTALL_TOOL exists under typo3conf/
+* on the backend it can be accessed by System Maintainers only under the Admin Tools module
+```php
+TYPO3_CONF_VARS[SYS][systemMaintainers] = '';
+```
 
 --
  
@@ -245,9 +252,13 @@ See: https://docs.typo3.org/m/typo3/guide-installation/master/en-us/Troubleshoot
 
 * Password handling
 ???
-* know that there are not default passwords for protected areas
-* know that first created administrator has the same password as the install tool which must be changed
-* know that there is at the moment no option for recovering passwords
+* there are not default passwords for protected areas
+* first created administrator has the same password as the install tool which must be changed right after installation
+* there is at the moment no option for recovering passwords
+* from the install tool it is only possible to create a new administrator user
+* if having access to the database a new password can be used to replace the previous one
+The new password can be generated using the php command password_hash() for the configured encryption method
+
 --
 
 * Upgrade wizard
