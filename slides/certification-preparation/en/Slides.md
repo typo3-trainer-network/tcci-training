@@ -589,24 +589,9 @@ class: h1-fullwidth
 
 * About the TYPO3 Security Team
 
-???
-
-* How to deal with security issues, both found and reported.
-
-* How to contact security team
-
 --
 
 * Get informed about Security issues
-
-???
-
-* RSS Feed (https://typo3.org/help/security-advisories/)
-
-* Mailing List (http://lists.typo3.org/cgi-bin/mailman/listinfo/typo3-announce)
-
-* Extension Manager + Scheduler Tasks
-  (Update extension manager list + send email on system report issues)
 
 --
 
@@ -615,28 +600,6 @@ class: h1-fullwidth
 --
 
 * Security inside TypoScript and Fluid
-
-???
-
-* Know https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html
-
-* SQL Injection (Intval)
-  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#sql-injection
-
-* Cross Site Scripting (XSS)
-  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#cross-site-scripting-xss<Paste>
-
-* External file inclusion
-  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#cross-site-scripting-xss
-
-* Integrity of external JavaScript files
-  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#integrity-of-external-javascript-files
-
-* Risk of externally hosted JavaScript libraries
-  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#risk-of-externally-hosted-javascript-libraries
-
-* Raw HTML in content elements
-  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#content-elements
 
 --
 
@@ -732,6 +695,98 @@ class: center, middle, h1-fullwidth
 layout: false
 
 # Security
+
+---
+name: work-security-security-team
+class: h1-fullwidth
+layout: false
+
+# Security Team
+
+* How to deal with security issues, both found and reported.
+
+* How to contact security team
+
+???
+
+* Reporting issues
+  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/SecurityTeam/Index.html#report-a-security-issue
+
+* Incident handling
+  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/SecurityTeam/Index.html#incident-handling
+
+* Contact team via E-Mail
+
+---
+name: work-security-security-issues
+class: h1-fullwidth
+layout: false
+
+# Get informed about Security issues
+
+* RSS Feed
+  https://typo3.org/help/security-advisories/
+
+* Mailing List
+  http://lists.typo3.org/cgi-bin/mailman/listinfo/typo3-announce
+
+* Extension Manager + Scheduler Tasks
+
+???
+
+Scheduler Taks to "Update extension manager list" + send email on system report issues)
+
+---
+name: work-security-secure-password
+class: h1-fullwidth
+layout: false
+
+# Secure passwords
+
+* Use long passwords
+
+* Don't use existing words
+
+* Don't use parts of your name, family, etc.
+
+* Store passwords securely
+
+---
+name: work-security-typoscript-and-fluid
+class: h1-fullwidth
+layout: false
+
+# Security inside TypoScript and Fluid
+
+* Know Guidelines from Security Chapter
+
+* SQL Injection (Intval)
+
+* Cross Site Scripting (XSS)
+
+* External file inclusion
+
+* Integrity of external JavaScript files
+
+* Risk of externally hosted JavaScript libraries
+
+* Raw HTML in content elements
+
+???
+
+* https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html
+
+* https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#sql-injection
+
+* https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#cross-site-scripting-xss<Paste>
+
+* https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#cross-site-scripting-xss
+
+* https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#integrity-of-external-javascript-files
+
+* https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#risk-of-externally-hosted-javascript-libraries
+
+* https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#content-elements
 
 ---
 class: left, fullscreen-image pt-50
