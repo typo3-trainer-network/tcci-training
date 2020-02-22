@@ -43,6 +43,14 @@ h1, h2, h3 {
   box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
+.remark-slide ul img {
+  border:none;
+  box-shadow: none;
+  height: 1em;
+  margin-top: 0;
+  padding: 0;
+}
+
 .remark-slide h1 {
   background-color: $typo3;
   color: #fff;

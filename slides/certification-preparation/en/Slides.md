@@ -671,7 +671,7 @@ class: h1-fullwidth
 
 --
 
-* Image Generation / Manipulation with TypoScript
+* [Image Generation / Manipulation with TypoScript](#index-imagemanipulation)
 
 --
 
@@ -953,12 +953,173 @@ class: center, middle, h1-fullwidth
 layout: false
 
 # TypoScript
+
+---
+name: index-imagemanipulation
+class: h1-fullwidth
+
+# Image Generation
+
+The cObject GIFBUILDER is used for generating images
+
+---
+name: imagegeneration-example
+class: h1-fullwidth
+
+# Image Generation - Example
+
+```javascript
+page = PAGE
+page.10 = IMAGE
+page.10 {
+    file = GIFBUILDER
+    file {
+        XY = [10.w]+10,[10.h]+30
+        backColor = #333333
+        format = png
+        10 = IMAGE
+        10 {
+            file = fileadmin/Benediktbeuern_1080p.png
+            file.width =  800
+            width = [20.w]+20
+            offset = 5,5
+        }
+        20 = TEXT
+        20 {
+            text = Copyright 2019-{date:Y} Oliver Thiele
+            text.insertData = 1
+            fontFile = fileadmin/SourceSansPro-Regular.ttf
+            fontColor = #ffffff
+            offset = 10,[10.h]+30-8
+        }
+    }
+}
+```
+
+???
+
+## Example code snippet:
+
+* _slides/certification-preparation/Examples/TypoScript/GifBuilder.typoscript_
+
+## Documantation: 
+
+[TSref](https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/Gifbuilder/Gifbuilder/Index.html)
+
+---
+name: imagegeneration-result
+class: h1-fullwidth
+
+# Image Generation - Result
+
+.center[![TYPO3 BE Configuration](../Examples/Images/GIFBUILDER_Example.png "TYPO3 BE Configuration Module")]
+
+---
+name: imagegeneration-question-1
+class: h1-fullwidth
+
+# Image Generation - Questions
+
+## What GIFBUILDER Objects can you use? (4)
+
+* TEXT
+
+* TEXTSHADOW
+
+* IMAGE
+
+* CROP
+
+* BOX
+
+???
+
+## Right Answers:
+ * TEXT
+ * IMAGE
+ * CROP
+ * BOX
+ 
+---
+name: imagegeneration-answers-1
+class: h1-fullwidth
+
+# Image Generation - Questions
+
+## What GIFBUILDER Objects can you use? (4)
+
+* TEXT ![Right Answer](../../images/check-circle.svg)
+
+* TEXTSHADOW
+
+* IMAGE ![Right Answer](../../images/check-circle.svg)
+
+* CROP ![Right Answer](../../images/check-circle.svg)
+
+* BOX ![Right Answer](../../images/check-circle.svg)
+
+???
+
+## Right Answers:
+ * TEXT
+ * IMAGE
+ * CROP
+ * BOX
+ 
+---
+name: imagegeneration-question-1
+class: h1-fullwidth
+
+# Image Generation - Questions
+
+## What type of font files can TYPO3 use (2)
+
+* OpenTypeFont (*.otf)
+
+* WebTypeFont (*.wtf)
+
+* TrueTypeFont (*.ttf)
+
+* FontAwesome (*.fa)
+
+* OpenSourceFont (*osf)
+
+???
+
+## Right Answers:
+ * ttf
+ * otf
+
+---
+name: imagegeneration-answer-1
+class: h1-fullwidth
+
+# Image Generation - Questions
+
+## What type of font files can TYPO3 use (2)
+
+* OpenTypeFont (*.otf) ![Right Answer](../../images/check-circle.svg)
+
+* WebTypeFont (*.wtf)
+
+* TrueTypeFont (*.ttf) ![Right Answer](../../images/check-circle.svg)
+
+* FontAwesome (*.fa)
+
+* OpenSourceFont (*osf)
+
+???
+
+## Right Answers:
+ * ttf
+ * otf
+
 ---
 name: work-templating
 class: center, middle, h1-fullwidth
 layout: false
-
 # Templating & other outputs
+
 ---
 name: work-extensions
 class: center, middle, h1-fullwidth
