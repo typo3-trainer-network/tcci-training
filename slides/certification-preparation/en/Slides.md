@@ -383,9 +383,24 @@ class: h1-fullwidth
 
 * About the TYPO3 Security Team
 
+???
+
+* How to deal with security issues, both found and reported.
+
+* How to contact security team
+
 --
 
 * Get informed about Security issues
+
+???
+
+* RSS Feed (https://typo3.org/help/security-advisories/)
+
+* Mailing List (http://lists.typo3.org/cgi-bin/mailman/listinfo/typo3-announce)
+
+* Extension Manager + Scheduler Tasks
+  (Update extension manager list + send email on system report issues)
 
 --
 
@@ -395,17 +410,68 @@ class: h1-fullwidth
 
 * Security inside TypoScript and Fluid
 
+???
+
+* Know https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html
+
+* SQL Injection (Intval)
+  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#sql-injection
+
+* Cross Site Scripting (XSS)
+  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#cross-site-scripting-xss<Paste>
+
+* External file inclusion
+  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#cross-site-scripting-xss
+
+* Integrity of external JavaScript files
+  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#integrity-of-external-javascript-files
+
+* Risk of externally hosted JavaScript libraries
+  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#risk-of-externally-hosted-javascript-libraries
+
+* Raw HTML in content elements
+  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#content-elements
+
 --
 
 * Security headers & https
 
+???
+
+* Know differenct of http and https (SSL)
+
+* Clickjacking (X-Frame-Options)
+  https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#clickjacking
+
+* Content Security Policy
+  https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
+
 --
 
-* Security related Installtool options
+* Global TYPO3 configuration options
+
+???
+
+See: https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/Security/GuidelinesIntegrators/Index.html#global-typo3-configuration-options
+
+* trustedHostsPattern
+* lockSSL
+* displayErrors
+* devIPmask
+* cookieSecure
+* warning_email_addr / warning_mode
+* fileDenyPattern
+* lockIP / lockIPv6, enabledBeUserIPLock, IPmaskList
 
 --
 
 * Backup strategy
+
+???
+
+* Have a way to automatically create backup of database and filesystem.
+* Also have a way to restore data for fielsystem and database.
+
 ---
 class: left, fullscreen-image pt-50
 background-image: url(../../images/Benediktbeuern_1080p.png)
