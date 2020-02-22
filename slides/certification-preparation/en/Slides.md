@@ -583,7 +583,7 @@ name: performancex
 class: h1-fullwidth
 # Performance
 
-* Caching (Redis, Varnish)
+* External caching solutions
 
 --
 
@@ -880,8 +880,100 @@ class: center, middle, h1-fullwidth
 layout: false
 
 # Performance
+
 ---
-name: work-backend
+name: work-performance-external-solutions
+class: h1-fullwidth
+layout: false
+
+# External caching solutions
+
+* External storages like redis and memcached
+
+* Possibilities to store generated Pages.
+  E.g. reverse proxies or static file caches.
+
+* Reverse proxies
+
+* Know about benefits and technical impacts
+
+---
+name: work-performance-typo3-caching
+class: h1-fullwidth
+layout: false
+
+# TYPO3 Caching
+
+* Caching Framework
+
+* TSconfig options
+
+* TypoScript options
+
+* Difference between:
+    * `USER` and `USER_INT`
+    * `COA` and `COA_INT`
+
+???
+
+https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/ApiOverview/CachingFramework/Index.html
+
+TypoScript:
+* `config.sendCacheHeaders`
+* `stdWrap.addPageCacheTags`
+* `stdWrap.cache`
+
+TSconfig:
+* `TCEMAIN.clearCacheCmd`
+* `TCEMAIN.clearCache_disable`
+* `TCEMAIN.clearCache_pageGrandParent`
+* `TCEMAIN.clearCache_pageSiblingChildren`
+
+---
+name: work-performance-http-headers
+class: h1-fullwidth
+layout: false
+
+# HTTP headers
+
+* Cache-Control
+* ETag
+* Status code 304
+
+???
+
+https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching
+
+---
+name: work-performance-compression-concatenating
+class: h1-fullwidth
+layout: false
+
+# compression / concatenating
+
+* TypoScript options
+
+* Install tool options
+
+???
+
+TypoScript options:
+
+* `config.compressCss`
+* `config.compressJs`
+* `config.concatenateCss`
+* `config.concatenateJs`
+* `.disableCompression`
+* `.excludeFromConcatenation`
+
+Install tool options:
+
+* GFX|gif_compress
+* BE|compressionLevel
+* FE|compressionLevel
+
+---
+name: work-core
 class: center, middle, h1-fullwidth
 layout: false
 
@@ -1226,7 +1318,7 @@ class: h1-fullwidth
 
 ???
 
-# PSR-17 - HTTP Factories 
+# PSR-17 - HTTP Factories
 
 It describes a common standard for factories that create PSR-7 compliant HTTP objects.
 
