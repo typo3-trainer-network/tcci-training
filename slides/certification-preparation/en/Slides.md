@@ -831,7 +831,7 @@ class: h1-fullwidth
 
 --
 
-* Dataprocessors
+* DataProcessors
 ---
 name: extensions
 class: center, middle, h1-fullwidth
@@ -1409,7 +1409,7 @@ page.10 {
 
 * _slides/certification-preparation/Examples/TypoScript/GifBuilder.typoscript_
 
-## Documantation: 
+## Documantation:
 
 [TSref](https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/Gifbuilder/Gifbuilder/Index.html)
 
@@ -1526,6 +1526,235 @@ name: work-templating
 class: center, middle, h1-fullwidth
 layout: false
 # Templating & other outputs
+
+---
+name: work-templating-engine
+class: h1-fullwidth
+# What is a Templating Engine?
+
+* Pre processor of some markup into target format
+
+* Combines and separates incoming data and a template into a result
+
+* Inside of TYPO3 used to create HTML, XML, …
+
+* Use same template in different situations
+
+* Use different template for same plugin on different sites
+
+---
+name: work-templating-fluid
+class: h1-fullwidth
+# What is Fluid?
+
+* An xml inspired template engine
+
+* Invented by TYPO3
+
+* Can be used without TYPO3 in other projects
+
+---
+name: work-templating-viewhelpers
+class: h1-fullwidth
+# ViewHelpers
+
+* Execute PHP Code from inside a template
+
+* Two formats: Inline and tag
+
+* Allows to format data, e.g. currency or time
+
+* Allows to transform data, e.g. crop images
+
+* Allows to create urls
+
+---
+name: work-templating-viewhelpers
+class: h1-fullwidth
+# ViewHelpers Example
+
+Inline
+
+```html
+    {data.date -> f:format.date(format: '%d. %B %Y')}
+```
+
+Tag
+
+```html
+    <f:format.date format="%d. %B %Y">{data.date}</f:format.date>
+
+```
+
+---
+name: work-templating-importing-viewhelpers
+class: h1-fullwidth
+# Importing ViewHelpers
+
+In order to use ViewHelpers, Namespace need to be imported
+
+Tag
+
+```html
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+</html>
+```
+
+Inline
+
+```html
+{namespace f=TYPO3\CMS\Fluid\ViewHelpers}
+{namespace be=TYPO3\CMS\Backend\ViewHelpers}
+```
+
+???
+
+* Could also be `<div>` instead of `<html>`
+* `data-namespace-typo3-fluid="true"` is important, it will remove the tag from
+  output
+
+---
+name: work-templating-file-structure
+class: h1-fullwidth
+# Templates, Layouts, Partials
+
+* Structure contents
+
+* Makes parts re usable
+
+* Templates and Partials can contain sections
+
+---
+name: work-templating-file-structure-example
+class: h1-fullwidth
+# Templates, Layouts, Partials Example
+
+Example file structure
+```
+Resources
+└── Private
+    ├── Layouts
+    │   └── Default.html
+    ├── Partials
+    │   └── Header.html
+    └── Templates
+        └── Text.html
+```
+
+---
+name: work-templating-file-structure-example
+class: h1-fullwidth
+# Templates, Layouts, Partials Example
+
+Example Template
+```html
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+    {f:layout(name: 'Default')}
+
+    <f:section name="Header">
+        {f:render(partial: 'Header', arguments: {
+            uid: data.uid,
+            layout: '2'
+        })}
+    </f:section>
+
+    <f:section name="Content">
+        {data.bodytext -> f:format.html()}
+    </f:section>
+</html>
+```
+
+---
+name: work-templating-fluid-view
+class: h1-fullwidth
+# Using the Fluid View
+
+* Used in TypoScript via cObject `FLUIDTEMPLATE`
+
+    * Assign variables and settings 
+
+* Used by Extensions
+
+    * Backend Modules
+
+    * Frontend Plugins
+
+* Paths can be configured
+
+---
+name: work-templating-fluid-view
+class: h1-fullwidth
+# Using the Fluid View Example
+
+```
+lib.contentElement = FLUIDTEMPLATE
+lib.contentElement {
+    templateName = Default
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Templates/
+    }
+    layoutRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Layouts/
+    }
+    partialRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Partials/
+    }
+
+    variables {
+        variableName = TEXT
+        variableName.value = Hello World
+    }
+
+    settings {
+        maxWidth = 120
+    }
+}
+```
+
+---
+name: work-templating-dataprocessors
+class: h1-fullwidth
+# DataProcessors
+
+* Allows to extend and gather data upfront
+
+* Only available for cOBJECT `FLUIDTEMPLATE`
+
+* Core ships with some processors, custom one can be added as PHP Classes
+
+---
+name: work-templating-dataprocessors
+class: h1-fullwidth
+# DataProcessors Example
+
+```
+dataProcessing {
+    50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    50 {
+        as = pageSections
+        special = list
+        special.value.data = page:uid
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            10 {
+                table = tt_content
+                pidInList.field = uid
+                as = content
+                where = sectionIndex = 1 AND header_layout != 100
+                orderBy = sorting
+            }
+        }
+    }
+
+}
+```
+
+???
+
+Some processors allow nesting
 
 ---
 name: work-extensions
