@@ -246,8 +246,8 @@ TYPO3_CONF_VARS[SYS][systemMaintainers] = '';
 * create the FIRST_INSTALL file in the document root
 * know how to fix system environment issues
 See: https://docs.typo3.org/m/typo3/guide-installation/master/en-us/Troubleshooting/Index.html#troubleshooting
-* know how to set up the base configuration for the site
-
+* know that  the database connection information is set here the first time to use or create a new database
+* know that the password for the administrator user and install tool are configured here the first time
 --
 
 * Password handling
@@ -261,12 +261,30 @@ The new password can be generated using the php command password_hash() for the 
 
 --
 
-* Upgrade wizard
+* Upgrade functions
+    * Core upgrade
+    * Upgrade wizard
+
+???
+* know that there is a Core Upgrade function that can be uses for maintenance and bugfixes releases , it works if:
+tar is available on ser server
+the setup uses symbolic links
+the symbolic links, the web root and the above path directory have the right permissions by the web server
+* know that there is an Upgrade wizard function that must be used after a major release upgrade,
+* know how to check status of the database and perform updates on table and fields structure using
 
 --
 
+* Translating the Backend
+???
+* know that the Manage Language Packs option can be found on the Maintenance module and it used todownload the translations of the available extensions which includes the backend system extensions for the chosen languages
+
+--
 
 * TYPO3 console
+???
+
+
 ---
 name: performance
 class: center, middle, h1-fullwidth
