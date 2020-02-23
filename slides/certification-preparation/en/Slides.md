@@ -15,7 +15,7 @@ class: h1-fullwidth
 * [Installation](#installation)
 * [Performance](#performance)
 * [Backend Administration](#backend-administration)
-* [Core Architecture & APIs](#core)
+* [Core Architecture & APIs](#index-core)
 * [TypoScript](#typoscript)
 * [Templating & other outputs](#templating)
 * [Extensions](#extensions)
@@ -637,13 +637,13 @@ class: h1-fullwidth
 
 * Scheduler
 ---
-name: core
+name: index-scheduler
 class: center, middle, h1-fullwidth
 layout: false
 
 # Core Architecture & APIs
 ---
-name: corex
+name: index-core
 class: h1-fullwidth
 # Core Architecture & APIs
 
@@ -656,6 +656,15 @@ class: h1-fullwidth
 --
 
 * Page title provider
+
+--
+
+* Meta tag provider
+
+--
+
+* Sitemap
+
 ---
 name: typoscript
 class: center, middle, h1-fullwidth
@@ -1001,7 +1010,7 @@ Install tool options:
 * FE|compressionLevel
 
 ---
-name: work-core
+name: work-backend-administration
 class: center, middle, h1-fullwidth
 layout: false
 
@@ -1012,6 +1021,93 @@ class: center, middle, h1-fullwidth
 layout: false
 
 # Core Architecture & APIs
+---
+name: work-core-fal
+class: h1-fullwidth
+# FAL
+
+* Abstraction of file system (File Abstraction Layer)
+
+* Allows usage of foreign systems like Dropbox
+
+* Stores information inside of Database
+
+* Files can be retrieved via TypoScript and DataProcessing
+
+* Files can be used with ViewHelpers
+
+???
+
+Meta information are stored in database.
+
+If not working with TYPO3 filelist, an scheduler task can update information in
+database.
+
+Storages can be defined on root node as TCA records in list module.
+
+---
+name: work-core-xliff
+class: h1-fullwidth
+# XLIFF
+
+* standard XML format for translations
+
+* Typically stored at `EXT:ext_key/Resources/Private/Language/<lang>.locallang.xlf`
+
+* Can be used via ViewHelper and TypoScript
+
+* New language records can be created on root node
+
+???
+
+Format contains `xliff > file > body > trans-unit`.
+Each entry has an ID and sub tags `source` and maybe `target`.
+
+---
+name: work-core-page-title-provider
+class: h1-fullwidth
+# Page title provider
+
+* Understand concept
+
+* Are able to use the TypoScript API
+
+    * `config.pageTitleProviders`
+
+* Are aware of core providers, and extensions can ship own
+
+???
+
+* Ordering of available providers through `.before` and `.after`
+
+---
+name: work-core-meta-tag-provider
+class: h1-fullwidth
+# Meta tag provider
+
+* Allows to set meta tags via TypoScript and PHP
+
+* `page.meta.*`
+
+* `page.meta.*.replace`
+
+---
+name: work-core-sitemap
+class: h1-fullwidth
+# Sitemap
+
+* `plugin.tx_seo.config.<sitemapType>.sitemaps.<unique key>`
+
+* Different Provider
+
+    * `TYPO3\CMS\Seo\XmlSitemap\PagesXmlSitemapDataProvider`
+
+    * `TYPO3\CMS\Seo\XmlSitemap\RecordsXmlSitemapDataProvider`
+
+* Provide custom Fluid templates
+
+* How to access sitemaps
+
 ---
 name: work-typoscript
 class: center, middle, h1-fullwidth
@@ -1104,7 +1200,7 @@ class: h1-fullwidth
  * IMAGE
  * CROP
  * BOX
- 
+
 ---
 name: imagegeneration-answers-1
 class: h1-fullwidth
@@ -1130,7 +1226,7 @@ class: h1-fullwidth
  * IMAGE
  * CROP
  * BOX
- 
+
 ---
 name: imagegeneration-question-1
 class: h1-fullwidth
