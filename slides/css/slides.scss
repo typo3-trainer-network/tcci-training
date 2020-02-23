@@ -10,6 +10,29 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.green {
+  color: green;
+}
+.orange {
+  color: $typo3;
+}
+.blue {
+  color: blue;
+}
+.black {
+  color: black;
+}
+.white {
+  color: white;
+}
+.yellow {
+  color: yellow;
+}
+.red {
+  color: red;
+}
+
+
 h1, h2, h3 {
   font-family: 'Share', sans-serif;
   font-weight: normal;
@@ -43,11 +66,45 @@ h1, h2, h3 {
   box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
+ul {
+  list-style: none; /* Remove default bullets */
+  li::before {
+    content: "\2022";
+    color: $typo3;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+   li p{display: inline-block}
+}
+
+ol {
+  list-style: none;
+  counter-reset: li;
+  li {
+    counter-increment: li;
+    p{display: inline-block}
+  }
+
+  li::before {
+    content: counter(li) ".";
+    color: $typo3;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    text-align: right;
+  }
+}
+
+.remark-slide ol img,
 .remark-slide ul img {
-  border:none;
+  border: none;
   box-shadow: none;
   height: 1em;
   margin-top: 0;
+  margin-bottom: -5px;
   padding: 0;
 }
 
@@ -100,6 +157,15 @@ h1, h2, h3, li {
   padding: 0 !important;
 }
 
+// Small Fonts
+.h1-fullwidth.small p,
+.h1-fullwidth.small li {
+  font-size: 26px !important;
+}
+.h1-fullwidth.small .remark-code{
+  font-size: 16px !important;
+}
+
 .footnote {
   position: absolute;
   bottom: 0;
@@ -110,8 +176,10 @@ h1, h2, h3, li {
   }
 }
 
-.red {
-  color: red;
+.h1-fullwidth.question {
+  h2 {
+    font-size: 36px;
+  }
 }
 
 .bold {

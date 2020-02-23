@@ -667,7 +667,7 @@ name: typoscriptx
 class: h1-fullwidth
 # TypoScript
 
-* TypoScript functions (getText, stdWrap, …)
+* [TypoScript functions (getText, stdWrap, …)](#index-typoscript-functions)
 
 --
 
@@ -1020,6 +1020,107 @@ layout: false
 # TypoScript
 
 ---
+name: index-typoscript-functions
+class: h1-fullwidth
+
+# TypoScript Functions
+
+* stdWrap
+* getText
+        
+---
+name: optionsplit
+class: h1-fullwidth
+
+# Option Split
+
+optionSplit is the codename of a very tricky - but very useful! - function and functionality. 
+
+It is primarily used with the menu objects where it is enabled for MANY properties. 
+
+This make optionSplit really powerful.
+
+---
+name: optionsplit-ruleset-1
+class: h1-fullwidth
+
+# Option Split - The old ruleset
+
+.blue[first1 .black[||] first2] |\*| .red[middle1 .black[||] middle2 .black[||] middle3] |\*| .green[last1 .black[||] last2]
+
+1. The priority is .green[last], .blue[first], .red[middle].
+2. If the middle-value is empty (“”), the last part of the first- value is repeated.
+3. If the first - and middle value are empty, the first part of the last-value is repeated before the last value.
+4. The middle value is repeated.
+
+???
+## Documentation:
+
+[TSref v7](https://docs.typo3.org/m/typo3/reference-typoscript/7.6/en-us/Functions/OptionSplit.html)
+ 
+---
+name: optionsplit-ruleset-2
+class: h1-fullwidth small
+
+# Option Split - The current ruleset
+
+wrap = .blue[a .black[||] b]  |\*|  .red[r .black[||] s]  |\*|  .green[y .black[||] z]
+
+1. The items of mainpart Z are used first.
+2. The items of mainpart A are used second.
+3. The items of mainpart R are used third.
+4. The order in which input items appear in the output is from left to right exactly as in the input.
+5. For mainpart Z the start position is as close to the end as possible.
+6. For mainpart A subparts are taken from the beginning.
+7. For mainpart R subparts are taken from the beginning and the whole sequence R is repeated from the beginning as long as necessary.
+
+???
+## Documentation:
+
+[TSref](https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/Functions/OptionSplit.html#the-optionsplit-ruleset)
+ 
+---
+name: optionsplit-question-1
+class: h1-fullwidth question
+
+# Option Split - Questions
+
+## You have a navigation with 7 items (all with page title "Link". What is the output if you have the following configuration? (1)
+
+```javascript
+NO.stdWrap.wrap = A| || B|  |*| C| || |D |*| E
+``` 
+
+1. **A**Link **B**Link **C**Link **D**Link **C**Link **D**Link Link**E**
+2. **A**Link **B**Link **C**Link Link**D** Link**D** Link**D** Link**E** 
+3. **A**Link **B**Link **C**Link Link**D** **C**Link Link**D** Link**E**
+4. **A**Link **B**Link **C**Link Link**D** **C**Link Link**D** **E**Link
+5. **A**Link **B**Link **C**Link **C**Link **C**Link Link**D** **E**Link
+
+???
+## Right Answer: 4
+
+---
+
+name: optionsplit-question-1
+class: h1-fullwidth question
+
+# Option Split - Questions
+
+## You have a navigation with 7 items (all with page title "Link". What is the output if you have the following configuration? (1)
+
+```javascript
+NO.stdWrap.wrap = A| || B|  |*| C| || |D |*| E
+``` 
+
+1. **A**Link **B**Link **C**Link **D**Link **C**Link **D**Link Link**E**
+2. **A**Link **B**Link **C**Link Link**D** Link**D** Link**D** Link**E** 
+3. **A**Link **B**Link **C**Link Link**D** **C**Link Link**D** Link**E**
+4. **A**Link **B**Link **C**Link Link**D** **C**Link Link**D** **E**Link ![Right Answer](../../images/check-circle.svg)
+5. **A**Link **B**Link **C**Link **C**Link **C**Link Link**D** **E**Link
+
+---
+
 name: index-imagemanipulation
 class: h1-fullwidth
 
@@ -1029,7 +1130,7 @@ The cObject GIFBUILDER is used for generating images
 
 ---
 name: imagegeneration-example
-class: h1-fullwidth
+class: h1-fullwidth small question
 
 # Image Generation - Example
 
@@ -1073,7 +1174,7 @@ page.10 {
 
 ---
 name: imagegeneration-result
-class: h1-fullwidth
+class: h1-fullwidth question
 
 # Image Generation - Result
 
@@ -1081,7 +1182,7 @@ class: h1-fullwidth
 
 ---
 name: imagegeneration-question-1
-class: h1-fullwidth
+class: h1-fullwidth question
 
 # Image Generation - Questions
 
@@ -1107,7 +1208,7 @@ class: h1-fullwidth
  
 ---
 name: imagegeneration-answers-1
-class: h1-fullwidth
+class: h1-fullwidth question
 
 # Image Generation - Questions
 
@@ -1133,7 +1234,7 @@ class: h1-fullwidth
  
 ---
 name: imagegeneration-question-1
-class: h1-fullwidth
+class: h1-fullwidth question
 
 # Image Generation - Questions
 
@@ -1157,7 +1258,7 @@ class: h1-fullwidth
 
 ---
 name: imagegeneration-answer-1
-class: h1-fullwidth
+class: h1-fullwidth question
 
 # Image Generation - Questions
 
@@ -1299,6 +1400,7 @@ background-image: url(../../images/Benediktbeuern_1080p.png)
 ## Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi aperiam aspernatur beatae blanditiis commodi deleniti dolores ducimus error ipsum iusto, obcaecati odio pariatur perspiciatis porro quasi quisquam reprehenderit suscipit.
 
 ---
+name: example-fullscreen-image
 class: right, fullscreen-image
 background-image: url(../../images/Benediktbeuern_1080p.png)
 
@@ -1621,3 +1723,21 @@ count: false
 Important footnote]
 
 # End
+
+---
+name: identifier-for-the-slide-2
+class: h1-fullwidth
+
+# Header
+
+* List item 1
+
+--
+
+* List item 2
+
+--
+
+* List item 3
+
+--
