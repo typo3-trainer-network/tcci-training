@@ -521,57 +521,148 @@ name: installrequirements
 class: h1-fullwidth
 # Software components
 
-* Webserver
+* Web server
+???
+* know is possible on most current versions such apache, nginx or iis
+* understand about mod-rewrite, htaccess 
+* know about SSL support
 
 --
 
 * PHP (Versions, Modules, Settings)
+???
+* version 10 from PHP >= 7.2 <= 7.4
+* you know where to find information about incompatibilities and new features http://php.net/manual/en/migration70.php
+* you know about basic modules you need like zip, pdo, mysqli, openssl, etc
 
 --
 
 * DBMS
+???
+* know about Doctrine
+* version 10 from MySQL >= 5 <= 5.7, Postgres, SQL, SQLite or MariaDB >= 10 <= 10.3
+* know about data base privileges
 
 --
 
-* Image manipulation libraries
+* Image processing
+???
+* know where temporary data is stored (typo3temp)
+* know where you can configure and test the processor (Install tool: Environment)
 
 --
 
 * Commandline commands
+???
+* know how to use composer for installing distribution, extensions and updates
+* know how to use cli commands for updating languages, run cron jobs, block installations
 
 --
 
 * Operating systems
+???
+* know that it should run on any OS if it has a web server for PHP and database server
 
 --
 
-* Webbrowsers
+* Web browsers
+???
+* know that the backend is not supported for most versions of Internet Explorer, only Edge
+
 ---
 name: installways
 class: h1-fullwidth
-# Installation ways
+# Installation guide
 
 * get.typo3.org
     * composer
-    * from Git
+    * git
+    * direct downloads
+    
+???
+* know how to download the distribution package using composer, this is the recommended way 
+See: https://docs.typo3.org/m/typo3/guide-installation/master/en-us/QuickInstall/Composer/Index.html
+* or creating a composer.json file including the necessary system extensions using the composer helper
+See: https://get.typo3.org/misc/composer/helper
+* know how to download the source from Git git clone
+See: https://github.com/TYPO3/TYPO3.CMS
+* know also how to download the source package distribution using wget, curl or direct download
+
+--
+
+* Distributions
+???
+* know that a distribution is a preconfigured installation
+* know that it is possible to select a predefined distribution on a first time installation
+--
+
+* Root level folders and file structure
+???
+* public:is the document root and public entry point
+* var: contains system files, like caches, logs, sessions…
+* vendor: contains third-party php packages, libraries etc.
 ---
 name: installtypo3
 class: h1-fullwidth
 # TYPO3 Tools
 
-* Step wizard
-
---
-
-* Upgrade wizard
-
---
-
 * Install tool
+???
+* know that it is used to configure the system not just for installing it
+* know that it is located in typo3/install
+* on the frontend it can be accessed as http://www.example.com/typo3/install.php
+if the file ENABLE_INSTALL_TOOL exists under typo3conf/
+* on the backend it can be accessed by System Maintainers only under the Admin Tools module
+```php
+TYPO3_CONF_VARS[SYS][systemMaintainers] = '';
+```
+
+--
+ 
+* Step wizard
+???
+* create the FIRST_INSTALL file in the document root
+* know how to fix system environment issues
+See: https://docs.typo3.org/m/typo3/guide-installation/master/en-us/Troubleshooting/Index.html#troubleshooting
+* know that  the database connection information is set here the first time to use or create a new database
+* know that the password for the administrator user and install tool are configured here the first time
+--
+
+* Password handling
+???
+* there are not default passwords for protected areas
+* first created administrator has the same password as the install tool which must be changed right after installation
+* there is at the moment no option for recovering passwords
+* from the install tool it is only possible to create a new administrator user
+* if having access to the database a new password can be used to replace the previous one
+The new password can be generated using the php command password_hash() for the configured encryption method
+
+--
+
+* Upgrade functions
+    * Core upgrade
+    * Upgrade wizard
+
+???
+* know that there is a Core Upgrade function that can be uses for maintenance and bugfixes releases , it works if:
+tar is available on ser server
+the setup uses symbolic links
+the symbolic links, the web root and the above path directory have the right permissions by the web server
+* know that there is an Upgrade wizard function that must be used after a major release upgrade,
+* know how to check status of the database and perform updates on table and fields structure using
+
+--
+
+* Translating the Backend
+???
+* know that the Manage Language Packs option can be found on the Maintenance module and it used todownload the translations of the available extensions which includes the backend system extensions for the chosen languages
 
 --
 
 * TYPO3 console
+???
+
+
 ---
 name: performance
 class: center, middle, h1-fullwidth
