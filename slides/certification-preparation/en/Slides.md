@@ -524,7 +524,7 @@ class: h1-fullwidth
 * Web server
 ???
 * know is possible on most current versions such apache, nginx or iis
-* understand about mod-rewrite, htaccess 
+* understand about mod-rewrite, htaccess
 * know about SSL support
 
 --
@@ -578,9 +578,9 @@ class: h1-fullwidth
     * composer
     * git
     * direct downloads
-    
+
 ???
-* know how to download the distribution package using composer, this is the recommended way 
+* know how to download the distribution package using composer, this is the recommended way
 See: https://docs.typo3.org/m/typo3/guide-installation/master/en-us/QuickInstall/Composer/Index.html
 * or creating a composer.json file including the necessary system extensions using the composer helper
 See: https://get.typo3.org/misc/composer/helper
@@ -618,7 +618,7 @@ TYPO3_CONF_VARS[SYS][systemMaintainers] = '';
 ```
 
 --
- 
+
 * Step wizard
 ???
 * create the FIRST_INSTALL file in the document root
@@ -1409,7 +1409,7 @@ page.10 {
 
 * _slides/certification-preparation/Examples/TypoScript/GifBuilder.typoscript_
 
-## Documantation:
+## Documentation:
 
 [TSref](https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/Gifbuilder/Gifbuilder/Index.html)
 
