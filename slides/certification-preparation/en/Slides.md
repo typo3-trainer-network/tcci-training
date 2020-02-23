@@ -1409,7 +1409,7 @@ page.10 {
 
 * _slides/certification-preparation/Examples/TypoScript/GifBuilder.typoscript_
 
-## Documantation:
+## Documentation:
 
 [TSref](https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/Gifbuilder/Gifbuilder/Index.html)
 
