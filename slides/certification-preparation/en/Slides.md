@@ -1105,13 +1105,168 @@ name: work-backend-administration
 class: center, middle, h1-fullwidth
 layout: false
 
-# Backend Administration
+# Core Architecture & APIs
+
 ---
 name: work-core
 class: center, middle, h1-fullwidth
 layout: false
 
-# Core Architecture & APIs
+# Backend Administration
+---
+name: work-site-configuration
+class: h1-fullwidth
+layout: false
+
+# Site Configuration
+
+* Handle basic page settings
+
+--
+
+* Configure languages and language settings
+
+--
+
+* Manage error handling
+
+--
+
+* Enter static routes
+
+--
+
+* Manage redirects
+
+???
+* Setting up the basic domain and request related configuration for a website.
+* Setting up advanced domain and language options for multiple websites on a single installation.
+* Understanding the basics of human readable URLs.
+* URL Routing in TYPO3Handling the routing implementation in TYPO3.
+* Redirecting URLs in TYPO3, related options and their implications.
+
+---
+name: work-workspaces
+class: h1-fullwidth
+layout: false
+
+# Workspaces
+
+* you know how to create your own workspaces
+
+--
+
+* you know how to manage the settings for workspaces
+
+--
+
+* you know how to handle content in different workspaces
+
+???
+* Configuration and setup of a defined custom editorial workflow.Database Mounts
+* Knowledge about workspace concepts in TYPO3 context.
+https://docs.typo3.org/c/typo3/cms-workspaces/master/en-us/
+
+---
+name: work-import-export
+class: h1-fullwidth
+layout: false
+
+# Import/Export
+
+* you know how to export data from TYPO3
+
+--
+
+* you know how to import data into TYPO3
+
+--
+
+* you understand the settings for import/export
+
+--
+
+---
+name: work-rte
+class: h1-fullwidth
+layout: false
+
+# Rich text editor
+
+* you know how to configure the Rich Text Editor
+
+???
+* https://docs.typo3.org/c/typo3/cms-rte-ckeditor/master/en-us/Introduction/Index.html
+
+---
+name: work-access
+class: h1-fullwidth
+layout: false
+
+# User Rights/Access
+
+* you are able to configure access to backend pages and page (sub) trees for backend users and groups.
+
+--
+
+* you are able to configure backend users and backend groups to ensure correct permissions for the editors.
+
+???
+* https://docs.typo3.org/m/typo3/tutorial-getting-started/master/en-us/UserManagement/Index.html
+
+---
+name: work-reports
+class: h1-fullwidth
+layout: false
+
+# Reports Module
+
+* you know where to find information about the state of the instance.
+
+---
+name: work-scheduler
+class: h1-fullwidth
+layout: false
+
+# Scheduler
+
+* you know the Scheduler basics and can manage recurring tasks.
+
+???
+* https://docs.typo3.org/c/typo3/cms-scheduler/master/en-us/Introduction/Index.html
+
+---
+name: work-forms
+class: h1-fullwidth
+layout: false
+
+# Forms
+
+* you are able to using the Drag & Drop Editor for Basic Forms
+
+--
+
+* you know about advanced fields
+
+--
+
+* you are able to set up a localisation for a given form.
+
+--
+
+* you are able to adjusting form templates.
+
+--
+
+* you are knowing the terminology of the form framework.
+
+--
+
+* you know how to transferring basic forms to another installation.
+
+???
+* https://docs.typo3.org/c/typo3/cms-form/master/en-us/
+
 ---
 name: work-core-fal
 class: h1-fullwidth
