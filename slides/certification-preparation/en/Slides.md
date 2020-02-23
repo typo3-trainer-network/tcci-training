@@ -200,7 +200,7 @@ class: h1-fullwidth
     * composer
     * git
     * direct downloads
-    
+
 ???
 * know how to download the distribution package using composer, this is the recommended way 
 See: https://docs.typo3.org/m/typo3/guide-installation/master/en-us/QuickInstall/Composer/Index.html
@@ -209,6 +209,7 @@ See: https://get.typo3.org/misc/composer/helper
 * know how to download the source from Git git clone
 See: https://github.com/TYPO3/TYPO3.CMS
 * know also how to download the source package distribution using wget, curl or direct download
+* know that when using composer mode the Extension Manager can not be used for installing, removing or updating extensions
 
 --
 
@@ -279,10 +280,42 @@ the symbolic links, the web root and the above path directory have the right per
 ???
 * know that the Manage Language Packs option can be found on the Maintenance module and it used todownload the translations of the available extensions which includes the backend system extensions for the chosen languages
 
---
+---
+name: typo3console
+class: h1-fullwidth
 
-* TYPO3 console
+# TYPO3 Console
+
+* install packages and distributions
+
+```php
+composer create-project "typo3/cms-base-distribution:^10" my-new-project
+```
+
+* perform site and system tasks
+
+```php
+php .vendor/bin/typo3 language:update
+```
+```php
+php .vendor/bin/typo3cms cache:flush --force
+```
+
+* available commands
+
+```php
+php public/typo3/sysext/core/bin/typo3 list
+```
+
 ???
+* know that you can use an external extension for commands based on the Symfony Console
+* know how you can find the list of available commands for the Command Line Inter- face module dispatcher
+updating language packages
+update reference index
+flush caching
+site configuration information
+lock / unlock backend
+etc
 
 
 ---
